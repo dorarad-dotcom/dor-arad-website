@@ -1,0 +1,97 @@
+===HE===
+TITLE: עליית ההונאות ב-DeFi: וקטורי תקיפה חדשים ואיך חוקרים מגיבים אליהם
+META: חוקר בלוקצ'יין מסביר איך המבנה הפתוח והמודולרי של DeFi יוצר משטחי הונאה חדשים, למה קשה כל כך לאכוף עליהם חוק, ואיך מתודולוגיית החקירה הפורנזית מתפתחת בהתאם.
+BODY:
+לפני כמה שנים, רוב תיקי ההונאה שהגיעו לשולחני התחילו בצורה מוכרת: גורם עברייני, חשבון בנק, ושובל נייר שאפשר לעקוב אחריו עד למקור. היום, חלק גדל והולך מהתיקים שלי מתחיל בכתובת של חוזה חכם (smart contract) במקום בשם חברה. DeFi - מימון מבוזר - הסיר את המתווכים שעליהם מבוסס המימון המסורתי, גם לצורך נוחות וגם לצורך הגנה. והתכונות שהופכות אותו לחזק כל כך - גישה חסרת רשות (permissionless), מודולריות (composability) ותכנות מלא - הן בדיוק מה שהופך אותו לפגיע בדרכים שפשוט לא היו קיימות לפני עשור.
+
+## למה DeFi כתב מחדש את ספר הכללים של ההונאה
+
+ב-DeFi, כל אחד יכול לפרוס פרוטוקול או לקיים איתו אינטראקציה בלי אישור מגוף מרכזי כלשהו - זו המשמעות של "חסר רשות". במקביל, פרוטוקולים נבנים זה על גבי זה כמו קוביות לגו כלכליות: פלטפורמת הלוואות שואבת נתוני מחיר מבורסה מבוזרת, שמזינה בעצמה גשר בין-רשתי, שמזין פרוטוקול תשואה נוסף. הפתיחות הזו מאפשרת חדשנות מהירה במיוחד - אבל היא גם מאפשרת לתוקף לשלב כמה פרוטוקולים בתוך עסקה בודדת ולייצר תנאי שוק שלעולם לא היו נוצרים בנסיבות רגילות. עבור חוקר, המשמעות היא שהגבול בין "ניצול חכם של הקוד כפי שנכתב" לבין גניבה בפועל לפעמים מטושטש - ובדיוק שם מתחילה העבודה שלי.
+
+## משטח התקיפה החדש
+
+בשנים האחרונות התגבשו כמה קטגוריות חוזרות של וקטורי תקיפה ב-DeFi. הנה הבולטות שבהן:
+
+- **ניצולי הלוואת פלאש (flash loan)** - הלוואה עצומה ללא בטוחה, הנלקחת ונפרעת בתוך עסקה בודדת, המשמשת להטיית מחיר שוק זמנית לצורך רווח מיידי.
+- **מניפולציה על אורקלים (oracle manipulation)** - אורקל הוא המנגנון שמזין לפרוטוקול נתוני מחיר מהעולם החיצוני; כשמקור הנתונים פגיע, תוקף יכול לעוות באופן זמני את המחיר המדווח ולרוקן פרוטוקולי הלוואות על בסיסו.
+- **דלתות אחוריות בחוזים חכמים ו"רג פולים" (rug pulls)** - פונקציות ניהול נסתרות, הרשאת הטבעת טוקנים בלתי מוגבלת, או פשוט נטישת פרויקט מיד לאחר משיכת הנזילות שגייס.
+- **בריכות נזילות מזויפות או לא מאוזנות** - בריכות שנבנו במיוחד למשוך הפקדות ואז מרוקנות באמצעות מסחר לא מאוזן או חוזי טוקן זדוניים.
+- **פריצות לגשרים בין-רשתיים (cross-chain bridges)** - גשרים המחזיקים רזרבות נעולות גדולות הופכים ל"קופות דבש" מרוכזות; פריצה יכולה לנבוע מפרצה בקוד האימות או מהשתלטות על מפתחות של ולידטורים.
+- **תקיפות טוקן ממשל (governance token)** - צבירה או השאלה זמנית של כמות מספקת של טוקני הצבעה כדי להעביר הצעת ממשל זדונית שמפנה כספי אוצר הפרויקט לכיס פרטי.
+
+## למה קשה כל כך לאכוף חוק על תיקי DeFi
+
+הונאה פיננסית מסורתית כמעט תמיד עוברת דרך מתווך - בנק, ברוקר, חברת תשלומים - שאפשר להוציא לו צו הזמנת מסמכים. ב-DeFi אין מתווך כזה: הכתובות פסאודונימיות, העסקאות בלתי הפיכות תוך שניות, וכספים יכולים לחצות שרשראות ושיפוט מדינתי כמה פעמים לפני שמישהו בכלל שם לב לתקיפה. יש גם שכבת מורכבות משפטית ייחודית: כשתוקף "רק" משתמש בקוד בדיוק כפי שנכתב, האם מדובר בגניבה או בניצול לגיטימי (אם לא אתי) של הפרוטוקול? השאלה הזו עדיין לא זכתה למענה אחיד בבתי משפט ברחבי העולם, וזה מקשה על אכיפה מהירה. ולבסוף - המודולריות שמניעה חדשנות היא גם מה שמאפשר לכספים לעבור דרך עשרות פרוטוקולים, המרות ורשתות בתוך בלוק אחד, מה שמטשטש את המקור המקורי הרבה יותר מהר ממה שכלי מעקב מסורתיים בנויים להתמודד איתו.
+
+## איך חוקרים מתאימים את המתודולוגיה שלהם ל-DeFi
+
+עבודת חקירה ב-DeFi דורשת שילוב של מיומנויות שלא היו נדרשות בעולם הפיננסי המסורתי:
+
+**קריאת קוד של חוזים חכמים** - בדיקת קוד המקור המאומת או הבייטקוד, השוואה לגרסאות ידועות ותקינות, ואיתור פונקציות ניהול, הרשאות הטבעה או מנגנוני שליטה נסתרים - הן לפני אירוע (לצורך הערכת סיכון) והן אחריו (לצורך הבנת מנגנון התקיפה).
+
+**ניתוח ממשל ועסקאות על השרשרת** - שחזור היסטוריית הצעות ממשל, דפוסי הצבעה ותנועות באוצר הפרויקט, וקישור בין ארנקים לפי דפוסי תזמון והתנהגות.
+
+**מעקב דרך בורסות מבוזרות וגשרים** - מעקב אחר ערך שעובר דרך המרות, טוקנים עטופים ועסקאות גשר, במקומות שבהם כלי ניתוח שרשרת מסורתיים "נתקעים". חלק מרכזי מהעבודה הוא איתור נקודת היציאה - הבורסה או השירות שבו הכספים הומרו סוף סוף למטבע פיאט או נכס נזיל אחר.
+
+השילוב של שחזור ציר זמן מדויק עם ניתוח קוד מאפשר לבנות דוח שמבסס לא רק את מה שקרה, אלא גם את הכוונה מאחוריו - הבדל קריטי כשדוח כזה נועד לשמש בהליך משפטי או פלילי.
+
+## מה זה אומר בפועל ליזמים ולמשקיעים
+
+ביקורת קוד עצמאית (audit) היא הכרחית, אבל היא לעולם לא מספיקה בפני עצמה - היא תמונת מצב של רגע נתון, לא ערבות לעתיד. יזמים שרוצים להגן על הפרויקט שלהם צריכים ניטור מתמשך של פעילות חשודה, נהלים ברורים לניהול ארנקי ריבוי-חתימה (multisig) ואוצר הפרויקט, ותוכנית תגובה לאירוע שמוכנה מראש - כי ברגע שמתרחשת תקיפה, כל דקה קובעת האם עוד אפשר לשמר ראיות או לתקוף חוזים בזמן אמת. משקיעים, מצידם, נהנים מהערכת נאותות (due diligence) שכוללת לא רק את מודל העסקי, אלא גם בדיקה בלתי תלויה של קוד החוזה ומבנה הממשל שלו.
+
+## מה זה אומר בפועל לנפגעים המחפשים סעד
+
+בעולם שבו עסקאות בלתי הפיכות ומהירות, הזמן הוא המשאב הקריטי ביותר. ככל שנפגע פונה מוקדם יותר לחוקר או לגורמי אכיפת חוק, כך גדל הסיכוי לזהות ולתעד את תנועת הכספים לפני שהם מתפזרים דרך שכבות נוספות של פרוטוקולים ובורסות. חשוב לשמור על כל תיעוד - כתובות ארנק, מזהי עסקאות, תקשורת עם הפרויקט - ולגשת לציפיות עם ראש פקוח: לא כל תיק מסתיים בהשבת כספים, אבל דוח פורנזי מקצועי הוא לעיתים קרובות התנאי ההכרחי לפנייה לרשויות אכיפה, לתביעה אזרחית, או לדרישה מול בורסה שבה הכספים נחתו.
+
+## לסיכום
+
+DeFi לא הפך את ההונאה לנפוצה יותר - הוא רק שינה את הצורה שלה. ככל שהתחום ימשיך לצמוח, כך תגדל גם הדרישה לחקירה שמבינה גם קוד וגם כסף. אני עובד עם יזמים, משקיעים וצוותים משפטיים - הן להערכת חשיפה לפני שמתרחש אירוע, והן למעקב ותיעוד הפסדים אחרי שהוא כבר קרה. אם אתם מתמודדים עם שאלה כזו, מוזמנים לפנות אליי לשיחה.
+
+===EN===
+TITLE: The Rise of DeFi Fraud: New Attack Vectors and How Investigators Respond
+META: A blockchain investigator explains how DeFi's permissionless, composable design opens new fraud surfaces, why they resist traditional policing, and how forensic methodology is adapting.
+BODY:
+A few years ago, most of the fraud cases that crossed my desk started in a familiar shape: a bad actor, a bank account, a paper trail leading somewhere. Today, a growing share of my caseload starts with a smart contract address instead of a company name. DeFi - decentralized finance - has stripped away the intermediaries that traditional finance relies on for both convenience and protection. The same features that make it powerful - permissionless access, composability, and full programmability - are exactly what make it exploitable in ways that simply did not exist a decade ago.
+
+## Why DeFi Rewrote the Fraud Playbook
+
+"Permissionless" means anyone can deploy a protocol or interact with one without approval from a central gatekeeper. "Composability" means protocols stack on top of each other like financial building blocks - a lending platform pulls its price data from a decentralized exchange, which feeds a cross-chain bridge, which in turn feeds a yield protocol. This openness is what makes DeFi innovate so fast. It's also what lets an attacker chain several protocols together inside a single transaction to manufacture market conditions that would never occur organically. For an investigator, that means the line between "clever, if unethical, use of the code as written" and outright theft is often blurry - and that blur is usually where the case begins.
+
+## The New Attack Surface
+
+A handful of recurring attack categories have emerged as DeFi has scaled:
+
+- **Flash-loan exploits**: massive, uncollateralized loans borrowed and repaid within a single transaction, used to temporarily distort a market and extract value before anyone can react.
+- **Oracle manipulation**: an "oracle" is the mechanism that feeds a protocol real-world price data; when that data source is manipulable, an attacker can briefly skew the reported price and drain a lending protocol that relies on it.
+- **Smart-contract backdoors and rug pulls**: hidden admin functions, unlimited minting privileges, or simple abandonment of a project immediately after liquidity is pulled.
+- **Fake or imbalanced liquidity pools**: pools engineered specifically to attract deposits, then drained through lopsided trades or malicious token contracts.
+- **Cross-chain bridge hacks**: bridges holding large locked reserves become concentrated honeypots, vulnerable to flaws in signature verification or compromised validator keys.
+- **Governance-token attacks**: accumulating or briefly borrowing enough voting-token weight to pass a malicious proposal that redirects a project's treasury.
+
+## Why These Cases Resist Traditional Policing
+
+Conventional financial fraud almost always passes through an intermediary - a bank, a broker, a payment processor - that can be subpoenaed for records. DeFi has no equivalent. Addresses are pseudonymous, transactions are irreversible within seconds, and funds can cross multiple chains and jurisdictions before anyone even notices the exploit. There's also a legal ambiguity unique to this space: when an attacker "merely" uses a protocol's code exactly as written, is that theft, or is it legitimate - if unethical - use of the system? Courts around the world haven't settled that question consistently, which slows down enforcement. And the same composability that drives innovation lets stolen funds pass through dozens of protocols, swaps, and chains within a single block, obscuring the original trail far faster than traditional tracing tools were built to handle.
+
+## How Investigators Adapt Their Methodology to DeFi
+
+Working DeFi cases requires a blend of skills that simply weren't necessary in traditional finance investigations.
+
+**Smart contract code review** means reading verified source code or raw bytecode, diffing it against known, audited implementations, and identifying admin keys, minting functions, or hidden access controls - either proactively, as part of risk assessment, or after the fact, to reconstruct exactly how an exploit worked.
+
+**On-chain governance and transaction analysis** involves reconstructing a protocol's proposal history, voting patterns, and treasury movements, and correlating wallet clusters by timing and behavior to identify who was really behind a malicious governance action.
+
+**Tracing through DEXs and bridges** means following value as it moves through swaps, wrapped assets, and bridge transactions - precisely the points where conventional chain-analysis tools tend to lose the thread. A key part of the work is identifying the eventual off-ramp: the exchange or service where funds were finally converted into fiat or another liquid asset.
+
+Combining precise timeline reconstruction with code-level analysis lets me build a report that establishes not just what happened, but the intent behind it - a distinction that matters enormously when the report is meant to support a legal or criminal proceeding.
+
+## What This Means for Founders and Investors
+
+An independent audit is necessary, but never sufficient on its own - it's a snapshot of a single moment, not a guarantee for the future. Founders serious about protecting their protocol need continuous monitoring for suspicious activity, disciplined multisig and treasury management, and an incident-response plan prepared well before it's needed - because once an exploit begins, every minute determines whether evidence can still be preserved or an attack can be halted in real time. Investors, for their part, benefit from due diligence that goes beyond the business model to include an independent review of the contract code and governance structure itself.
+
+## What This Means for Victims Seeking Recourse
+
+In a world of fast, irreversible transactions, time is the most critical resource a victim has. The earlier someone brings in an investigator or engages law enforcement, the better the odds of tracing and documenting fund movement before it disperses through additional layers of protocols and exchanges. It's worth preserving every piece of documentation - wallet addresses, transaction hashes, communications with the project - and approaching the process with realistic expectations: not every case ends in recovered funds, but a professional forensic report is very often the prerequisite for engaging law enforcement, pursuing a civil claim, or making a formal request to the exchange where the funds ultimately landed.
+
+## Closing Thoughts
+
+DeFi hasn't made fraud more common so much as it has changed its shape. As the space keeps growing, so will the need for investigation that understands both the code and the money behind it. I work with founders, investors, and legal teams - both to assess exposure before an incident occurs, and to trace and document losses after one has. If that's a question you're facing, feel free to reach out.

@@ -1,0 +1,93 @@
+===HE===
+TITLE: איך באמת עוקבים אחרי כספי קריפטו גנובים על הבלוקצ'יין
+META: חוקר בלוקצ'יין מסביר בשפה פשוטה כיצד עוקבים אחרי קריפטו גנוב בין ארנקים ובורסות, מה עובד, מה קשה, ולמה לפעולה מהירה יש חשיבות מכרעת.
+BODY:
+## הרגע שבו מבינים שהכסף נעלם
+
+יש רגע מוכר לכל מי שעבר את זה: מתחברים לארנק, או לחשבון בבורסה, ומגלים שהיתרה שהייתה שם אתמול איננה. לפעמים זו העברה שלא אישרתם, לפעמים זה פרויקט שהתברר כמרמה, ולפעמים זה עובד לשעבר או שותף עסקי שניצל גישה שהייתה לו. תגובת הבטן הראשונה, כמעט תמיד, זהה: "זה קריפטו, אז זה בטח אבד לתמיד." זו אחת הטעויות הנפוצות ביותר שאני נתקל בהן, וגם אחת המזיקות ביותר, כי היא גורמת לאנשים לוותר בדיוק ברגע שבו עוד ניתן לפעול.
+
+האמת מורכבת יותר. בלוקצ'יין הוא לא כלי הסתרה - הוא בדיוק ההפך. הוא יומן ציבורי, קבוע ובלתי ניתן לשינוי, של כל תנועה שהתבצעה אי פעם ברשת. האנונימיות שהעולם מייחס לקריפטו היא במידה רבה אשליה: מה שמוסתר הוא הזהות מאחורי הכתובת, לא התנועה של הכסף עצמו. וכאן בדיוק מתחילה עבודת החקירה.
+
+## בלוקצ'יין ציבורי הוא נקודת המוצא, לא הסוף
+
+כשמעבירים ביטקוין, את'ריום, USDT או כל מטבע אחר שרץ על רשת ציבורית, הפעולה נרשמת לצמיתות ונגישה לכל מי שיודע איפה לחפש. זה שונה לגמרי ממערכת בנקאית סגורה, שבה רק לבנק ולרגולטור יש גישה לנתונים. כל ארנק, כל העברה, כל חתימה - כולם גלויים. מה שחסר הוא רק שכבת הזיהוי: מי עומד מאחורי כתובת מסוימת.
+
+חקירת בלוקצ'יין היא בעצם התהליך של גישור על הפער הזה. מתחילים מנקודת ידיעה ברורה - כתובת, עסקה, סכום, זמן - ובונים ממנה מפה של תנועת הכספים קדימה, עד לנקודות שבהן אפשר לחבר בין כתובת אנונימית לבין ישות מזוהה בעולם האמיתי: בורסה, ספק שירות, או במקרים מסוימים אדם ספציפי.
+
+## איך המעקב באמת מתבצע
+
+מבחינה טכנית, חקירת קריפטו נשענת על שילוב של כמה שיטות משלימות, לא על "פריצה" קסומה כלשהי:
+
+- **ניתוח גרף עסקאות (clustering) והיוריסטיקות** - זיהוי דפוסים שמצביעים על כך שכמה כתובות שונות למעשה נשלטות על ידי אותו גורם, על בסיס האופן שבו הן מתנהגות ברשת לאורך זמן.
+- **מעקב אחר תנועת ערך בין שכבות** - כאשר כספים עוברים דרך ארנקים ביניים, פלטפורמות החלפה או חוזים חכמים, ניתן במקרים רבים לשמר את הרצף ולזהות היכן הערך "נוחת" בסופו של דבר.
+- **שיתוף פעולה עם בורסות ותהליכי KYC** - כאשר כספים גנובים מגיעים לבורסה מרכזית, שם קיימת בדרך כלל דרישת זיהוי לקוח, נפתח פוטנציאל אמיתי לחבר בין כתובת לזהות, בכפוף לצווים משפטיים מתאימים.
+- **זיהוי דפוסי "קפיצה בין רשתות" (chain-hopping)** - כאשר גנבים מנסים לטשטש עקבות על ידי מעבר בין בלוקצ'יינים שונים דרך גשרים או שירותי החלפה, ניתן במקרים רבים לעקוב אחרי ההיגיון הכלכלי של הפעולה גם כשהנתיב הטכני משתנה.
+
+אלה כלים אנליטיים, לא קסמים, והם דורשים ניסיון בפרשנות הנתונים לא פחות משהם דורשים תוכנה. חלק גדול מהעבודה הוא בעצם שיפוט מקצועי - להבין מתי דפוס מסוים באמת מעיד על שליטה משותפת, ומתי הוא רק צירוף מקרים.
+
+## איפה זה נהיה קשה באמת
+
+אני לא מתיימר לומר שכל תיק נפתר. יש מכשולים אמיתיים שכל חוקר רציני חייב להכיר בהם בגלוי. שירותי ערבוב (mixers) נועדו במפורש לשבור את הקשר הישיר בין כספים נכנסים ליוצאים, ולעיתים מצליחים בכך במידה משמעותית. מטבעות פרטיות, שבהם עצם מבנה הפרוטוקול מסתיר סכומים וכתובות ברמת המערכת, מציבים אתגר שונה באיכותו - לא רק בכמותו - מזה של רשתות ציבוריות רגילות. וגשרים בין-רשתיים, שהתרבו בשנים האחרונות, מוסיפים נקודות מעבר שבהן קל יחסית לאבד רצף ברור אם לא עוקבים אחריהן בזמן אמת.
+
+חשוב לומר את זה בכנות: מי שמבטיח החזר מובטח של כספים גנובים, פשוט לא מכיר את התחום לעומק. מה שאפשר להבטיח הוא מתודולוגיה רצינית, שקיפות לגבי מה שאפשרי ומה שלא, ודוח מקצועי שעומד בסטנדרט ראייתי - גם אם התוצאה הסופית תלויה במשתנים שאינם בשליטת החוקר, כמו מהירות התגובה, שיתוף פעולה של בורסות, ולעיתים גם המערכת המשפטית הרלוונטית.
+
+## איך נראית חקירה אמיתית בפועל
+
+חקירה סדורה מתחילה תמיד באיסוף עובדות: כתובות מעורבות, זמני עסקאות, כל תיעוד רלוונטי - צילומי מסך, התכתבויות, פרטי הפלטפורמה שממנה נעלמו הכספים. משם נבנית מפת תנועת הכספים, לרוב מוצגת ויזואלית, שממחישה את הנתיב מנקודת המוצא ועד לנקודות המפגש עם העולם המזוהה - בורסה, פלטפורמת החלפה, או ארנק שמזוהה עם פעילות ידועה.
+
+התוצר הסופי, ברוב המקרים, הוא דוח חקירתי מסודר שיכול לשמש בסיס לפנייה לרשויות אכיפת החוק, לתביעה אזרחית, או להליך מול בורסה שממנה מבקשים חסימת חשבון או שיתוף מידע. בישראל ובעולם, גורמי אכיפה ומערכות משפט לומדים בהדרגה להתמודד עם ראיות מסוג זה, ודוח מקצועי ומדויק הוא לעיתים קרובות ההבדל בין תיק שמתקדם לבין תיק שנתקע.
+
+חשוב להבין: התפקיד של החוקר הוא לספק את התמונה העובדתית המדויקת ביותר האפשרית - לא להבטיח תוצאה משפטית, שתלויה בגורמים רבים נוספים.
+
+## הזמן הוא משאב קריטי
+
+אם יש דבר אחד שהייתי רוצה שכל מי שקורא את זה יפנים, זה שהזמן שחולף בין הגילוי לבין תחילת הפעולה משפיע ישירות על סיכויי ההצלחה. כספים שנעים דרך רשת נעים מהר, ובורסות רבות שומרות תיעוד לפרקי זמן מוגבלים. פנייה מוקדמת - גם לפני שגובשה תלונה רשמית - מאפשרת לתעד ולעקוב לפני שהעקבות מתפוגגות.
+
+אני עובד עם קורבנות עוקבה, עורכי דין, רואי חשבון וארגונים שנתקלו בגניבה, הונאה או צורך בבדיקת נאותות פיננסית סביב נכסי קריפטו. כל תיק מתחיל בשיחה שקטה ומקצועית שבה בוחנים יחד מה ידוע, מה ריאלי לצפות לו, ומה השלב הבא. אם זה המצב שבו אתם נמצאים כרגע, אשמח לשמוע ולבחון יחד את התיק שלכם.
+
+===EN===
+TITLE: How Crypto Investigations Actually Trace Stolen Funds On-Chain
+META: A blockchain investigator explains, in plain language, how stolen crypto is traced across wallets and exchanges, what makes tracing hard, and what a real engagement looks like.
+BODY:
+## The Moment You Realize the Money Is Gone
+
+There's a moment I hear about often, almost always described the same way. Someone logs into a wallet or exchange account and finds a balance that was there yesterday simply isn't there anymore. Sometimes it's an unauthorized transfer, sometimes a project that turned out to be fraudulent, sometimes a former employee or business partner who misused access they once had. The first instinct, almost universally, is the same: "It's crypto, so it's probably gone for good." That assumption is one of the most common mistakes I see, and one of the most costly, because it convinces people to give up exactly when action is still possible.
+
+The reality is more nuanced. A blockchain isn't a tool for hiding money, it's the opposite. It's a public, permanent, unchangeable record of every transaction that has ever occurred on that network. The anonymity people associate with crypto is largely a misconception: what's actually hidden is the identity behind an address, not the movement of the funds themselves. That distinction is exactly where investigative work begins.
+
+## A Public Ledger Is the Starting Point, Not the End
+
+When someone moves Bitcoin, Ethereum, USDT, or any asset on a public network, that transaction is recorded permanently and is visible to anyone who knows where to look. That's fundamentally different from a traditional banking system, where only the bank and regulators can see the underlying data. Every wallet, every transfer, every signature is out in the open. What's missing is a single layer: who controls a given address in the real world.
+
+A blockchain investigation is, at its core, the process of closing that gap. It starts from a known fact, an address, a transaction, an amount, a timestamp, and builds forward from there, mapping how value moves until it reaches a point where an otherwise anonymous address can be connected to something identifiable: an exchange account, a service provider, or in some cases a specific individual.
+
+## How the Tracing Actually Works
+
+Technically, this kind of work relies on a combination of complementary techniques, not any single magic trick:
+
+- **Transaction graph analysis and clustering heuristics** — identifying patterns that indicate multiple addresses are likely controlled by the same entity, based on how they behave on-chain over time.
+- **Value-flow tracking across intermediary layers** — as funds pass through intermediate wallets, swap platforms, or smart contracts, the underlying flow of value can often be preserved and followed to where it ultimately settles.
+- **Exchange cooperation and KYC channels** — when stolen funds land on a centralized exchange that requires customer identification, there is a real opportunity to connect an address to an identity, subject to the appropriate legal process.
+- **Chain-hopping detection** — when funds are deliberately moved across different blockchains through bridges or swap services to obscure the trail, it's often still possible to follow the underlying economic logic of the movement, even as the technical path changes.
+
+These are analytical tools, not shortcuts, and interpreting the results correctly matters as much as running the analysis itself. A large part of the work is professional judgment: knowing when a pattern genuinely indicates common control, and when it's simply coincidence.
+
+## Where This Genuinely Gets Difficult
+
+I'm not going to pretend every case resolves cleanly. There are real obstacles that any serious investigator should be upfront about. Mixing services exist specifically to sever the direct link between incoming and outgoing funds, and in some cases they do this quite effectively. Privacy coins, where the protocol itself conceals amounts and addresses at a structural level, present a different kind of challenge, not just a harder version of the same problem, but a qualitatively different one. And cross-chain bridges, which have proliferated in recent years, add transition points where the trail can be lost relatively easily if they aren't monitored promptly.
+
+It's worth saying plainly: anyone who guarantees the recovery of stolen funds doesn't fully understand this field. What can be promised is a rigorous methodology, honesty about what's realistically achievable, and a professional report that holds up to scrutiny, even though the ultimate outcome depends on variables outside any investigator's control, including how quickly a victim acts, whether exchanges cooperate, and the legal system involved.
+
+## What a Real Engagement Looks Like
+
+A properly run investigation always starts with fact-gathering: the addresses involved, transaction timestamps, and any supporting documentation such as screenshots, correspondence, or details about the platform the funds disappeared from. From there, an investigator builds out a map of fund movement, typically presented visually, showing the path from the point of loss through to any points where it intersects with the identifiable world, an exchange, a service provider, or a wallet already associated with known activity.
+
+The deliverable, in most cases, is a structured investigative report that can support a report to law enforcement, a civil claim, or a formal request to an exchange to freeze an account or disclose information. Law enforcement agencies and courts, both in Israel and internationally, are increasingly equipped to work with this kind of evidence, and a precise, well-documented report is often the difference between a case that moves forward and one that stalls.
+
+It's worth being clear about the boundary here: the investigator's job is to establish the most accurate factual picture possible, not to guarantee a legal outcome, which depends on many additional factors beyond the trace itself.
+
+## Time Is the One Resource You Can't Get Back
+
+If there's one thing I'd want anyone reading this to take away, it's that the time between discovering a loss and starting an investigation directly affects the odds of a good outcome. Funds moving through a network move fast, and many exchanges retain records for only a limited period. Reaching out early, even before a formal complaint has been filed, allows the trail to be documented and followed before it fades.
+
+I work with individual theft victims, lawyers, accountants, and businesses facing fraud, theft, or the need for financial due diligence involving crypto assets. Every engagement starts with a quiet, professional conversation about what's known, what's realistic to expect, and what the right next step is. If that's where you find yourself right now, I'm glad to take a look at your case.

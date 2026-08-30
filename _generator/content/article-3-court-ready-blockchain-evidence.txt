@@ -1,0 +1,67 @@
+===HE===
+TITLE: מארנק לאולם בית המשפט: מה הופך ראיה בלוקצ'יין ל"כשירה לבית משפט"
+META: מדריך לעורכי דין וצוותים משפטיים על ההבדל בין בדיקת בלוקצ'יין שטחית לדוח חקירתי קביל, מבוסס שרשרת משמורת, שקיפות מתודולוגית ותיעוד ויזואלי.
+BODY:
+צילום מסך מ-Etherscan הוא לא ראיה. הוא נקודת התחלה. זהו אחד הדברים הראשונים שאני מסביר לעורכי דין שפונים אליי עם "כבר בדקנו, הכסף עבר לכתובת הזאת" — ולעיתים קרובות זה נכון, אבל בין ידיעה עובדתית לבין ראיה שתעמוד בפני שופט, צד נגדי ומומחה נגדי, יש מרחק גדול. אחרי שמונה שנים בעולם הפינטק והקריפטו, כולל ניהול קרן גידור וייעוץ פיננסי סביב DeFi וחוזים חכמים, ואחר כך שנים של חקירות בלוקצ'יין לגורמי אכיפה, משרדי עורכי דין ולקוחות פרטיים — למדתי שההבדל בין "בדיקה" לבין "ראיה" הוא כמעט תמיד עניין של תהליך, לא של כלים. כל אחד יכול להריץ כתובת ארנק בסייר בלוקצ'יין. השאלה היא האם מה שמוציאים מהתהליך הזה יחזיק מעמד כשמישהו ינסה לפרק אותו לגורמים.
+
+## פער בין "בדקתי בבלוקצ'יין" לבין ראיה קבילה
+
+בלוקצ'יין ציבורי הוא, במובן מסוים, מקור הנתונים האמין ביותר שקיים — הוא בלתי ניתן לשינוי, מבוזר ופתוח לכל בדיקה. הבעיה היא לא באמינות הנתונים עצמם, אלא בפרשנות שלהם. איזו כתובת שייכת למי, אילו עסקאות קשורות זו לזו, האם תנועת כספים דרך מיקסר או גשר בין-רשתי מנתקת את השרשרת הראייתית או רק מסתירה אותה זמנית — כל אלה דורשים ניתוח מקצועי, ולא רק קריאה של רשומה על המסך. דוח חקירתי כשיר לבית משפט לא מסתפק במסקנה "כתובת A שלחה 12 אתריום לכתובת B". הוא מסביר כיצד הגיעו למסקנה הזו, אילו הנחות עבודה הופעלו, ואילו מקורות תומכים, אם בכלל, מחזקים את השיוך בין כתובת לזהות אמיתית.
+
+## שרשרת משמורת: גם לנתונים דיגיטליים, לא רק לחפצים פיזיים
+
+עורכי דין רבים מניחים שמושג "שרשרת משמורת" רלוונטי רק לראיות פיזיות — כונן קשיח, טלפון נייד, מסמך נייר. בפועל, הוא קריטי לא פחות כשמדובר בנתוני בלוקצ'יין. כל שאילתה, כל ייצוא נתונים, כל שימוש בכלי אנליטיקה חיצוני חייב להיות מתועד: מתי בוצע, על ידי מי, באיזו גרסת כלי, ומה בדיוק חולץ. אם דוח חקירתי מתבסס על נתונים שנאספו חודשים לפני הגשתו בלי תיעוד מתי ואיך הם נאספו, קל לצד שכנגד לטעון שהנתונים שונו, שהכתובת קיבלה תנועות נוספות בינתיים, או שהחוקר פשוט לא יכול להוכיח מה בדיוק ראה בזמן אמת. שרשרת משמורת תקינה כוללת יומן פעולות מסודר, שמירה של קובצי גלם (raw data) לצד הניתוח הסופי, וחתימות זמן שניתן לאמת מול מקורות חיצוניים. זה נשמע פורמלי — וזה בדיוק העניין. המטרה היא שכל שלב בעבודה יהיה ניתן לשחזור ולביקורת על ידי מומחה אחר, כולל מומחה מטעם הצד שכנגד.
+
+## שקיפות מתודולוגית ויכולת שחזור
+
+דוח שמסתמך על "אני יודע לזהות דפוסי הלבנת הון" בלי להסביר איך, הוא דוח פגיע. מתודולוגיה שקופה אומרת שכל טענה בדוח נשענת על תהליך שניתן לתאר בשפה ברורה: אילו כלי אנליטיקה שימשו, אילו קריטריונים הגדירו קשר בין כתובות (בעלות משותפת, דפוס עסקאות חוזר, שימוש בשירות מרכזי משותף), ומה היו האלטרנטיבות שנשללו. חוקר בלוקצ'יין רציני לא מציג רק את המסקנה החזקה ביותר — הוא מציג גם את הספקות שנבדקו ונשללו. יכולת שחזור, כלומר האפשרות שמומחה אחר יבצע את אותה עבודה על סמך אותם נתונים ויגיע לאותה מסקנה, היא אבן הבוחן האמיתית. כשמומחה נגדי שואל "איך הגעת למסקנה הזו", התשובה חייבת להיות תיעוד, לא זיכרון או תחושת בטן.
+
+## חיזוק ממצאי השרשרת בנתונים חוץ-שרשרתיים
+
+זה אולי החלק החשוב ביותר עבור צוות משפטי, ולעיתים קרובות המוזנח ביותר. נתוני בלוקצ'יין לבדם, ברוב המקרים, לא מוכיחים זהות. הם מוכיחים תנועת ערך בין כתובות. הקשר בין כתובת לבן אדם או לחברה נבנה כשמשלבים את הממצא עם ראיות חוץ-שרשרתיות: תשובות KYC מבורסות, צווי גילוי מסמכים, רשומות ציבוריות, נתוני IP או מטא-דאטה שנאספו כדין, ולעיתים גם עדויות רגילות. חקירה טובה בונה גשר בין העולם הדיגיטלי לעולם הפיזי-משפטי, ולא מסתפקת באחד מהם. כשעורך דין שוקל האם לפנות לבורסה בבקשה או בצו, שווה לעשות זאת בשלב מוקדם, כי תגובות בורסות לוקחות זמן ולעיתים דורשות ניסוח משפטי מדויק כדי לקבל תשובה מועילה. חוקר בלוקצ'יין מנוסה יודע לכוון את השאלות הנכונות לבורסה עוד לפני שהצו יוצא, כדי למקסם את הסיכוי לתשובה שתחזק את התיק.
+
+## תיעוד ויזואלי ברור של זרימת הכספים
+
+שופט, חבר מושבעים או צד שכנגד לא בהכרח מבינים בלוקצ'יין. דוח מעולה מבחינה טכנית שלא מצליח להעביר את הסיפור בצורה ברורה, פשוט לא ממלא את תפקידו. תרשים זרימה מסודר, שמראה מקור, יעד ותחנות ביניים של הכספים, עם ציוני זמן וסכומים, הופך תיק מורכב לסיפור נגיש. חשוב שהתרשים לא "יפשט יתר על המידה" — כלומר, שהוא לא ישמיט שלבים או יטשטש אי-ודאות רק כדי להיראות נקי יותר. תיעוד ויזואלי טוב מציין במפורש היכן יש ודאות גבוהה ("קישור ישיר, מאומת דרך KYC") לעומת היכן יש הערכה סבירה בלבד ("קישור נסיבתי, מבוסס דפוס התנהגות"). ההבחנה הזו קריטית, כי היא זו שתקבע אם ראיה תתקבל כמכרעת או רק כתומכת.
+
+## שיקולי עדות מומחה ומלכודות נפוצות
+
+חוקר שמצפה לשמש כעד מומחה צריך לבנות את הדוח מהיום הראשון בהתאם — לא לכתוב סיכום פנימי ואז לנסות "להתאים" אותו לדרישות משפטיות בדיעבד. זה כולל קורות חיים מקצועיים ברורים, גילוי נאות של כל ניגוד עניינים אפשרי, ונכונות להסביר מסקנות בשפה פשוטה תחת חקירה נגדית. הטעויות הנפוצות ביותר שראיתי, גם אצל אחרים בתחום: הסתמכות על כלי אוטומטי בודד בלי אימות עצמאי; שימוש בשפה מוחלטת מדי ("הוכח מעל לכל ספק") כשהנתונים תומכים רק בהסתברות גבוהה; דילוג על שלבי ביניים בשרשרת העסקאות; והיעדר תיעוד שמאפשר לצד שכנגד לבדוק את העבודה. כל אחת מהטעויות הללו מספיקה כדי שראיה שלמה תיפסל או תיחלש משמעותית, גם כשהמסקנה המהותית נכונה.
+
+## לקראת שיתוף פעולה
+
+אם אתם מייצגים לקוח בתיק שבו כספים דיגיטליים הם חלק מהתמונה — הונאה, גניבת מטבע קריפטוגרפי, מעקב אחר נכסים בהליך אזרחי, או תמיכה בהליך רגולטורי — אשמח לשוחח על מה שהתיק דורש ולבחון יחד איך בונים חקירה שתעמוד במבחן. כל תיק שונה, וההיערכות הנכונה משתנה בהתאם לשלב ההליך ולסוג הראיה הנדרש.
+
+===EN===
+TITLE: From Wallet to Courtroom: What Makes Blockchain Evidence "Court-Ready"
+META: A guide for lawyers and legal teams on what separates a casual blockchain lookup from a defensible investigative report: custody, methodology, corroboration, and visual proof.
+BODY:
+A screenshot of a block explorer is not evidence. It's a starting point. That's usually the first thing I tell lawyers who come to me having "already checked the blockchain" and found where the money went. They're often right about the facts. But there's a wide gap between knowing something happened on-chain and having a report that will survive scrutiny from a judge, opposing counsel, and an opposing expert. After eight years building and running fintech and crypto ventures — including a crypto hedge fund and a financial consulting practice involving DeFi products and custom smart contracts — and years since spent conducting blockchain investigations for law enforcement, law firms, and private clients, I've come to see that the difference between a "lookup" and "evidence" is almost never about the tools. Anyone can run an address through an explorer. What matters is whether the process behind that lookup can withstand someone trying to take it apart.
+
+## The Gap Between "I Checked the Chain" and Actual Evidence
+
+Public blockchains are, in one sense, the most trustworthy data source available — immutable, decentralized, and open to anyone's verification. The problem is never the raw data; it's the interpretation. Which address belongs to whom, which transactions are meaningfully connected, whether funds routed through a mixer or a cross-chain bridge break the evidentiary trail or merely obscure it temporarily — none of that is answered by simply reading a ledger entry. A court-ready report doesn't stop at "Address A sent 12 ETH to Address B." It documents how that conclusion was reached, what assumptions were made along the way, and what corroborating sources, if any, tie an address to a real-world identity.
+
+## Chain of Custody: It Applies to Digital Data, Not Just Physical Exhibits
+
+Many lawyers assume chain of custody is only relevant to physical evidence — a hard drive, a phone, a paper file. In practice, it matters just as much for blockchain data. Every query, every data export, every use of a third-party analytics tool needs to be documented: when it was run, by whom, with which tool and version, and exactly what was retrieved. If a report relies on data pulled months before it's submitted with no record of when or how it was collected, opposing counsel has an easy opening — arguing the data may have changed, that the address received additional activity in the interim, or that the investigator simply can't prove what they actually saw at the time. Proper custody means an organized activity log, retention of raw data alongside the final analysis, and timestamps that can be independently verified. It sounds bureaucratic, and that's precisely the point — the goal is that every step of the work can be reproduced and audited by another qualified expert, including one retained by the other side.
+
+## Methodology Transparency and Reproducibility
+
+A report that leans on "I recognize money-laundering patterns" without explaining how is a fragile report. Transparent methodology means every claim rests on a process that can be described in plain language: which analytics tools were used, what criteria established a link between addresses (common ownership, a repeated transaction pattern, shared use of a centralized service), and which alternative explanations were considered and ruled out. A serious blockchain investigator doesn't present only the strongest conclusion — they show the alternative theories that were tested and eliminated. Reproducibility, meaning that another qualified expert working from the same underlying data would reach the same conclusion, is the real test. When an opposing expert asks "how did you get there," the answer needs to be documentation, not recollection or instinct.
+
+## Corroborating On-Chain Findings With Off-Chain Evidence
+
+This is arguably the most important section for a legal team, and often the most neglected. On-chain data alone, in most cases, does not prove identity. It proves the movement of value between addresses. The link between an address and a real person or entity is established by pairing the on-chain finding with off-chain evidence: exchange KYC responses, subpoena returns, public records, lawfully obtained IP or metadata, and sometimes ordinary witness testimony. A strong investigation builds a bridge between the digital and the evidentiary-legal world rather than resting on either alone. When counsel is deciding whether to send an exchange a request or a subpoena, it's worth doing so early — exchange responses take time, and often need to be framed with precise legal and technical language to actually yield a useful answer. An experienced blockchain investigator knows how to help shape those questions before the subpoena goes out, to maximize the odds of getting a response that actually strengthens the case.
+
+## Visualizing the Flow of Funds Clearly
+
+A judge, a jury, or opposing counsel doesn't necessarily understand blockchain mechanics, and a technically excellent report that fails to communicate the story clearly simply hasn't done its job. A clean flow diagram, showing source, destination, and intermediate hops with timestamps and amounts, turns a complex case into an accessible narrative. It matters that the diagram doesn't oversimplify — that it doesn't quietly drop steps or smooth over uncertainty just to look tidier. Good visual documentation explicitly distinguishes high-confidence links ("direct connection, confirmed via KYC response") from reasonable inferences ("circumstantial link, based on behavioral pattern"). That distinction is what determines whether a piece of evidence gets treated as conclusive or merely supportive.
+
+## Expert Witness Readiness and Common Pitfalls
+
+An investigator who expects to serve as an expert witness needs to build the report with that role in mind from day one, rather than writing an internal summary and retrofitting it for legal use later. That means a clear professional CV, full disclosure of any potential conflicts of interest, and the ability to explain conclusions in plain language under cross-examination. The most common mistakes I've seen, including from others in this field: relying on a single automated tool without independent verification; using absolute language ("proven beyond doubt") when the data actually supports high probability rather than certainty; skipping intermediate hops in a transaction chain; and failing to keep documentation that lets the opposing side actually check the work. Any one of these is enough to get an otherwise sound piece of evidence weakened or excluded, even when the underlying conclusion is correct.
+
+## Working Together
+
+If you're representing a client in a matter where digital assets are part of the picture — fraud, cryptocurrency theft, asset tracing in a civil dispute, or support for a regulatory proceeding — I'm glad to talk through what the case needs and how to build an investigation that holds up. Every matter is different, and the right approach depends on where you are in the process and what kind of evidence the case ultimately requires.

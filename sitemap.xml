@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://dngchain.finance/</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/en/</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/about.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/about.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/articles.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/articles.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/en/articles.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/articles.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/articles/tracing-stolen-crypto-onchain.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/articles/tracing-stolen-crypto-onchain.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles/tracing-stolen-crypto-onchain.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/en/articles/tracing-stolen-crypto-onchain.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/articles/tracing-stolen-crypto-onchain.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles/tracing-stolen-crypto-onchain.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/articles/crypto-scam-red-flags.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/articles/crypto-scam-red-flags.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles/crypto-scam-red-flags.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/en/articles/crypto-scam-red-flags.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/articles/crypto-scam-red-flags.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles/crypto-scam-red-flags.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/articles/court-ready-blockchain-evidence.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/articles/court-ready-blockchain-evidence.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles/court-ready-blockchain-evidence.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/en/articles/court-ready-blockchain-evidence.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/articles/court-ready-blockchain-evidence.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles/court-ready-blockchain-evidence.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/articles/defi-fraud-attack-vectors.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/articles/defi-fraud-attack-vectors.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles/defi-fraud-attack-vectors.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/en/articles/defi-fraud-attack-vectors.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/articles/defi-fraud-attack-vectors.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles/defi-fraud-attack-vectors.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/articles/crypto-aml-compliance.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/articles/crypto-aml-compliance.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles/crypto-aml-compliance.html" />
+  </url>
+  <url>
+    <loc>https://dngchain.finance/en/articles/crypto-aml-compliance.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://dngchain.finance/articles/crypto-aml-compliance.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles/crypto-aml-compliance.html" />
+  </url>
+</urlset>

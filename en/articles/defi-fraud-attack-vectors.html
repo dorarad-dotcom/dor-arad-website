@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Rise of DeFi Fraud: New Attack Vectors and How Investigators Respond — Dor Arad</title>
+<meta name="description" content="A blockchain investigator explains how DeFi's permissionless, composable design opens new fraud surfaces, why they resist traditional policing, and how forensic methodology is adapting." />
+<link rel="canonical" href="https://dngchain.finance/en/articles/defi-fraud-attack-vectors.html" />
+<link rel="alternate" hreflang="he" href="https://dngchain.finance/articles/defi-fraud-attack-vectors.html" />
+<link rel="alternate" hreflang="en" href="https://dngchain.finance/en/articles/defi-fraud-attack-vectors.html" />
+<meta name="author" content="Dor Arad" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0e14'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%2335e0a1'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+
+<canvas id="netCanvas"></canvas>
+<div class="grid-overlay"></div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="/en/"><span class="logo-dot"></span>DOR ARAD <span class="logo-sub">/ Blockchain Investigations</span></a>
+    <nav class="main-nav"><a href="/en/">Home</a><a href="/en/about.html">About</a><a href="/en/articles.html" class="active">Articles</a><a href="/en/#contact">Contact</a></nav>
+    <div class="header-actions">
+      <a href="/articles/defi-fraud-attack-vectors.html" class="lang-switch">עברית</a>
+      <a href="/en/#contact" class="btn btn-solid">Start an Inquiry</a>
+      <button class="mobile-nav-toggle" aria-label="menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav"><a href="/en/">Home</a><a href="/en/about.html">About</a><a href="/en/articles.html">Articles</a><a href="/en/#contact">Contact</a><a href="/articles/defi-fraud-attack-vectors.html">עברית</a></div>
+
+<main>
+
+  <section class="page-header wrap">
+    <div class="breadcrumb"><a href="/en/">Home</a> / <a href="/en/articles.html">Articles</a> / The Rise of DeFi Fraud: New Attack Vectors and How Investigators Respond</div>
+    <div class="eyebrow">DeFi</div>
+    <h1>The Rise of DeFi Fraud: New Attack Vectors and How Investigators Respond</h1>
+    <div class="article-meta-row">
+      <div class="author-chip"><span class="author-avatar">DA</span><span>Dor Arad</span></div>
+      <span>Published August 14, 2026</span>
+      <span>5 min read</span>
+    </div>
+  </section>
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="prose"><p>A few years ago, most of the fraud cases that crossed my desk started in a familiar shape: a bad actor, a bank account, a paper trail leading somewhere. Today, a growing share of my caseload starts with a smart contract address instead of a company name. DeFi - decentralized finance - has stripped away the intermediaries that traditional finance relies on for both convenience and protection. The same features that make it powerful - permissionless access, composability, and full programmability - are exactly what make it exploitable in ways that simply did not exist a decade ago.</p>
+<h2>Why DeFi Rewrote the Fraud Playbook</h2>
+<p>"Permissionless" means anyone can deploy a protocol or interact with one without approval from a central gatekeeper. "Composability" means protocols stack on top of each other like financial building blocks - a lending platform pulls its price data from a decentralized exchange, which feeds a cross-chain bridge, which in turn feeds a yield protocol. This openness is what makes DeFi innovate so fast. It's also what lets an attacker chain several protocols together inside a single transaction to manufacture market conditions that would never occur organically. For an investigator, that means the line between "clever, if unethical, use of the code as written" and outright theft is often blurry - and that blur is usually where the case begins.</p>
+<h2>The New Attack Surface</h2>
+<p>A handful of recurring attack categories have emerged as DeFi has scaled:</p>
+<ul><li><strong>Flash-loan exploits</strong>: massive, uncollateralized loans borrowed and repaid within a single transaction, used to temporarily distort a market and extract value before anyone can react.</li><li><strong>Oracle manipulation</strong>: an "oracle" is the mechanism that feeds a protocol real-world price data; when that data source is manipulable, an attacker can briefly skew the reported price and drain a lending protocol that relies on it.</li><li><strong>Smart-contract backdoors and rug pulls</strong>: hidden admin functions, unlimited minting privileges, or simple abandonment of a project immediately after liquidity is pulled.</li><li><strong>Fake or imbalanced liquidity pools</strong>: pools engineered specifically to attract deposits, then drained through lopsided trades or malicious token contracts.</li><li><strong>Cross-chain bridge hacks</strong>: bridges holding large locked reserves become concentrated honeypots, vulnerable to flaws in signature verification or compromised validator keys.</li><li><strong>Governance-token attacks</strong>: accumulating or briefly borrowing enough voting-token weight to pass a malicious proposal that redirects a project's treasury.</li></ul>
+<h2>Why These Cases Resist Traditional Policing</h2>
+<p>Conventional financial fraud almost always passes through an intermediary - a bank, a broker, a payment processor - that can be subpoenaed for records. DeFi has no equivalent. Addresses are pseudonymous, transactions are irreversible within seconds, and funds can cross multiple chains and jurisdictions before anyone even notices the exploit. There's also a legal ambiguity unique to this space: when an attacker "merely" uses a protocol's code exactly as written, is that theft, or is it legitimate - if unethical - use of the system? Courts around the world haven't settled that question consistently, which slows down enforcement. And the same composability that drives innovation lets stolen funds pass through dozens of protocols, swaps, and chains within a single block, obscuring the original trail far faster than traditional tracing tools were built to handle.</p>
+<h2>How Investigators Adapt Their Methodology to DeFi</h2>
+<p>Working DeFi cases requires a blend of skills that simply weren't necessary in traditional finance investigations.</p>
+<p><strong>Smart contract code review</strong> means reading verified source code or raw bytecode, diffing it against known, audited implementations, and identifying admin keys, minting functions, or hidden access controls - either proactively, as part of risk assessment, or after the fact, to reconstruct exactly how an exploit worked.</p>
+<p><strong>On-chain governance and transaction analysis</strong> involves reconstructing a protocol's proposal history, voting patterns, and treasury movements, and correlating wallet clusters by timing and behavior to identify who was really behind a malicious governance action.</p>
+<p><strong>Tracing through DEXs and bridges</strong> means following value as it moves through swaps, wrapped assets, and bridge transactions - precisely the points where conventional chain-analysis tools tend to lose the thread. A key part of the work is identifying the eventual off-ramp: the exchange or service where funds were finally converted into fiat or another liquid asset.</p>
+<p>Combining precise timeline reconstruction with code-level analysis lets me build a report that establishes not just what happened, but the intent behind it - a distinction that matters enormously when the report is meant to support a legal or criminal proceeding.</p>
+<h2>What This Means for Founders and Investors</h2>
+<p>An independent audit is necessary, but never sufficient on its own - it's a snapshot of a single moment, not a guarantee for the future. Founders serious about protecting their protocol need continuous monitoring for suspicious activity, disciplined multisig and treasury management, and an incident-response plan prepared well before it's needed - because once an exploit begins, every minute determines whether evidence can still be preserved or an attack can be halted in real time. Investors, for their part, benefit from due diligence that goes beyond the business model to include an independent review of the contract code and governance structure itself.</p>
+<h2>What This Means for Victims Seeking Recourse</h2>
+<p>In a world of fast, irreversible transactions, time is the most critical resource a victim has. The earlier someone brings in an investigator or engages law enforcement, the better the odds of tracing and documenting fund movement before it disperses through additional layers of protocols and exchanges. It's worth preserving every piece of documentation - wallet addresses, transaction hashes, communications with the project - and approaching the process with realistic expectations: not every case ends in recovered funds, but a professional forensic report is very often the prerequisite for engaging law enforcement, pursuing a civil claim, or making a formal request to the exchange where the funds ultimately landed.</p>
+<h2>Closing Thoughts</h2>
+<p>DeFi hasn't made fraud more common so much as it has changed its shape. As the space keeps growing, so will the need for investigation that understands both the code and the money behind it. I work with founders, investors, and legal teams - both to assess exposure before an incident occurs, and to trace and document losses after one has. If that's a question you're facing, feel free to reach out.</p></div>
+      <div class="prose"><div class="article-cta"><div><h3>Facing a similar situation?</h3><p>I'm glad to hear about your case and talk through the next steps — in complete confidence.</p></div><a href="/en/#contact" class="btn btn-solid">Get in Touch</a></div></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© <span class="js-year"></span> Dor Arad — Blockchain Investigations. All inquiries confidential.</p>
+    <p>Tel Aviv, Israel</p>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+</body>
+</html>
